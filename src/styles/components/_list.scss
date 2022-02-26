@@ -1,0 +1,9 @@
+.list {
+  &--ordered {
+    list-style-type: decimal;
+  }
+
+  &--unordered {
+    list-style-type: disc;
+  }
+}

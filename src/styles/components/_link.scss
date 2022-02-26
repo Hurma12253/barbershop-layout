@@ -1,0 +1,15 @@
+.link {
+  text-decoration: underline;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &--green {
+    color: $color-green;
+  }
+
+  &--comment {
+    color: $color-comment;
+  }
+}
