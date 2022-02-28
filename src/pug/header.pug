@@ -1,1 +1,22 @@
-header.header header
+header.header
+    a.header__logo
+        img(src=require("assets/images/LogoMobile.png"), alt="Logo")
+
+    nav.main-nav
+        button.main-nav__burger
+            span Открыть меню
+        .main-nav__wrapper
+            ul.main-nav__list.nav-list
+                li.nav-list__item
+                    a(href="") Главная
+                li.nav-list__item
+                    a(href="") Наши работы
+                li.nav-list__item
+                    a(href="") Записаться
+                li.nav-list__item
+                    a(href="") Контакты
+                li.nav-list__item
+                    a(href="")  HTML Academy
+            ul.main-nav__list.user-actions
+                .user-actions__item
+                    a(href="") Войти 
