@@ -1,3 +1,13 @@
-.some-fonts {
-    color: transparent;
+@font-face {
+    font-family: 'PT Sans narrow';
+    font-style: normal;
+    font-weight: normal;
+    src: url('/assets/fonts/PTSansNarrow-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'PT Sans narrow';
+    font-style: normal;
+    font-weight: bold;
+    src: url('/assets/fonts/PTSansNarrow-Bold.ttf') format('truetype');
 }
