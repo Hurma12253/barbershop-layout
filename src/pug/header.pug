@@ -1,22 +1,25 @@
 header.header
     a.header__logo
-        img(src=require("assets/images/LogoMobile.png"), alt="Logo")
+        img(src=require("assets/images/LogoMobile.png"), alt="Logo" width='226px' height='30px')
 
-    nav.main-nav
+    nav.main-nav.main-nav--closed
         button.main-nav__burger
-            span Открыть меню
         .main-nav__wrapper
             ul.main-nav__list.nav-list
+                li.nav-list__item.nav-list__item--active
+                    a.nav-list__link(href="") Главная
                 li.nav-list__item
-                    a(href="") Главная
+                    a.nav-list__link(href="") Наши работы
                 li.nav-list__item
-                    a(href="") Наши работы
+                    a.nav-list__link(href="") Записаться
                 li.nav-list__item
-                    a(href="") Записаться
+                    a.nav-list__link(href="") Контакты
                 li.nav-list__item
-                    a(href="") Контакты
-                li.nav-list__item
-                    a(href="")  HTML Academy
+                    a.nav-list__link(href="")  HTML Academy
             ul.main-nav__list.user-actions
-                .user-actions__item
-                    a(href="") Войти 
+                li.user-actions__item
+                    span.user-actions__login-icon
+                        include ../assets/images/LoginIcon.svg
+                    span.user-actions__login-text
+                        a(href="") Войти 
+

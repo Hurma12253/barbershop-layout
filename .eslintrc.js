@@ -16,6 +16,7 @@ module.exports = {
         // 'prettier/prettier': ['error', prettierOptions],
         'no-use-before-define': 0,
         'import/no-extraneous-dependencies': 0,
+        'no-console': 'off',
     },
     globals: {
         document: true,

@@ -1,0 +1,36 @@
+.stats {
+    background-color: $dark-gray-color;
+    color: $white-color;
+
+    &__wrapper {
+        @include media($tablet-breakpoint) {
+            padding: 0 64px;
+        }
+
+        @include media($desktop-breakpoint) {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            max-width: 960px;
+            margin: 0 auto;
+        }
+    }
+
+    &__header {
+        background-color: $white-color;
+        color: $black-color;
+    }
+
+    &__legend {
+        &--top {
+            @include media-max($mobile-breakpoint) {
+                display: none;
+            }
+        }
+
+        &--bottom {
+            @include media($tablet-breakpoint) {
+                display: none;
+            }
+        }
+    }
+}
